@@ -19,7 +19,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/rolude/image/main/2.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/rolude/image/main/3.png">
 <meta property="article:published_time" content="2024-07-04T10:11:53.000Z">
-<meta property="article:modified_time" content="2024-07-04T11:20:18.143Z">
+<meta property="article:modified_time" content="2024-07-04T11:31:09.457Z">
 <meta property="article:author" content="Rolude">
 <meta property="article:tag" content="-博客 -功能">
 <meta name="twitter:card" content="summary">
@@ -29,17 +29,17 @@
 <link rel="stylesheet" href="/lib/mdui_043tiny/mdui.css">
 
 
-<link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1720092350476">
+<link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1720092679162">
 
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
 
-<link rel="stylesheet" href="/css/style.css?v=1720092350476">
+<link rel="stylesheet" href="/css/style.css?v=1720092679162">
 
 
 
 
     
-        <link rel="stylesheet" href="/custom.css?v=1720092350476">
+        <link rel="stylesheet" href="/custom.css?v=1720092679162">
     
 
 
@@ -49,7 +49,7 @@
 <script src="/lib/lax.min.js" async></script>
 
 
-<script async src="/js/app.js?v=1720092350476"></script>
+<script async src="/js/app.js?v=1720092679162"></script>
 
  
 
@@ -362,9 +362,9 @@
 </ul>
 <h2 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h2><p>这里我用Github作示范<br>首先我们得需要配置一个SSH-Key</p>
 <ul>
-<li>在本地博客中打开git<br>输入：<figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs lisp">alert(&#x27;ssh-keygen -t ed25519 -C <span class="hljs-string">&quot;你的邮箱&quot;</span>&#x27;)<span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure></li>
+<li>在本地博客中打开git<br>输入：<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs xml">ssh-keygen -t ed25519 -C <span class="hljs-tag">&lt;<span class="hljs-name">你的邮箱</span>&gt;</span><br></code></pre></td></tr></table></figure></li>
 <li>输入后：我们要按三次回车，第二次时会问你是否要覆盖，输入“y”即可<br><img onerror="imgOnError(this);" data-fancybox="gallery" src="https://raw.githubusercontent.com/rolude/image/main/a.png" alt="image" data-caption="image" loading="lazy"></li>
-<li>然后我们接着输入：<figure class="highlight isbl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs isbl"><span class="hljs-function"><span class="hljs-title">alert</span>(<span class="hljs-string">&#x27;cat ~/.ssh/id_rsa.pub&#x27;</span>);</span><br></code></pre></td></tr></table></figure></li>
+<li>然后我们接着输入：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cat</span> ~/.ssh/id_rsa.pub<br></code></pre></td></tr></table></figure></li>
 <li>获取key（显示出的信息即为密钥，如图打码所示）<br><img onerror="imgOnError(this);" data-fancybox="gallery" src="https://raw.githubusercontent.com/rolude/image/main/b.png" alt="image" data-caption="image" loading="lazy"></li>
 </ul>
 <h2 id="第二步：配置key"><a href="#第二步：配置key" class="headerlink" title="第二步：配置key"></a>第二步：配置key</h2><ul>
@@ -373,30 +373,30 @@
 </ul>
 <h2 id="第三步-创建分支和备份文件"><a href="#第三步-创建分支和备份文件" class="headerlink" title="第三步-创建分支和备份文件"></a>第三步-创建分支和备份文件</h2><ul>
 <li><p>创建分支<br>进行git初始化</p>
-<figure class="highlight isbl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs isbl"><span class="hljs-function"><span class="hljs-title">alert</span>(<span class="hljs-string">&#x27;git init&#x27;</span>);</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs csharp">git <span class="hljs-keyword">init</span><br></code></pre></td></tr></table></figure>
 <p>创建hexo的分支，用处是用来存放源码</p>
-<figure class="highlight isbl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs isbl"><span class="hljs-function"><span class="hljs-title">alert</span>(<span class="hljs-string">&#x27;git checkout -b hexo&#x27;</span>);</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs armasm"><span class="hljs-symbol">git</span> checkout -<span class="hljs-keyword">b</span> hexo<br></code></pre></td></tr></table></figure>
 </li>
 <li><p>备份文件<br>文件添加</p>
-<figure class="highlight isbl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs isbl"><span class="hljs-function"><span class="hljs-title">alert</span>(<span class="hljs-string">&#x27;git add .&#x27;</span>);</span><br></code></pre></td></tr></table></figure></li>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">git <span class="hljs-built_in">add</span> .<br></code></pre></td></tr></table></figure></li>
 <li><p>然后提交</p>
-<figure class="highlight isbl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs isbl"><span class="hljs-function"><span class="hljs-title">alert</span>(<span class="hljs-string">&#x27;git commit -m &quot;这里为分支的名字，可以设置为”hexo“&#x27;</span>);</span><br></code></pre></td></tr></table></figure></li>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">git</span> commit -m &lt;这里为分支的名字，可以设置为<span class="hljs-string">&quot;hexo&quot;</span>&gt;<br></code></pre></td></tr></table></figure></li>
 <li><p>在github的博客仓库中添加远程的仓库</p>
-<figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs gcode">alert<span class="hljs-comment">(&#x27;git remote add origin ”你_config.yml中的repository&#x27;)</span>;<br></code></pre></td></tr></table></figure></li>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mipsasm">git remote <span class="hljs-keyword">add </span><span class="hljs-keyword">origin </span>&lt;你_<span class="hljs-built_in">config</span>.yml中的repository&gt;<br></code></pre></td></tr></table></figure></li>
 <li><p>最后部署到github</p>
-<figure class="highlight isbl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs isbl"><span class="hljs-function"><span class="hljs-title">alert</span>(<span class="hljs-string">&#x27;git push origin hexo&#x27;</span>);</span><br></code></pre></td></tr></table></figure></li>
+<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs maxima">git <span class="hljs-built_in">push</span> <span class="hljs-built_in">origin</span> hexo<br></code></pre></td></tr></table></figure></li>
 </ul>
 <p>恭喜你完成了备份，接下来是怎么恢复</p>
 <h2 id="恢复博客"><a href="#恢复博客" class="headerlink" title="恢复博客"></a>恢复博客</h2><ul>
 <li>首先你得有安装hexo的环境，这里不详细讲</li>
-<li>在github中下载你所创建的分支里的源文件（就是上述备份的那个）<br>或者在本地hexo文件夹中打开git输入：<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crmsh">alert(&#x27;git <span class="hljs-keyword">clone</span> <span class="hljs-title">-b</span> hexo  <span class="hljs-tag">&lt;你的远程仓库地址&gt;</span>&#x27;);<br></code></pre></td></tr></table></figure></li>
-<li>最后安装<figure class="highlight isbl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs isbl"><span class="hljs-function"><span class="hljs-title">alert</span>(<span class="hljs-string">&#x27;npm install&#x27;</span>);</span><br></code></pre></td></tr></table></figure></li>
+<li>在github中下载你所创建的分支里的源文件（就是上述备份的那个）<br>或者在本地hexo文件夹中打开git输入：<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crmsh">git <span class="hljs-keyword">clone</span> <span class="hljs-title">-b</span> hexo  <span class="hljs-tag">&lt;你的远程仓库地址&gt;</span><br></code></pre></td></tr></table></figure></li>
+<li>最后安装<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmake">npm <span class="hljs-keyword">install</span><br></code></pre></td></tr></table></figure></li>
 <li>完成操作</li>
 </ul>
 <h2 id="检查"><a href="#检查" class="headerlink" title="检查"></a>检查</h2><ul>
-<li>生成博客，查看是否有报错<figure class="highlight isbl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs isbl"><span class="hljs-function"><span class="hljs-title">alert</span>(<span class="hljs-string">&#x27;hexo g&#x27;</span>);</span><br></code></pre></td></tr></table></figure></li>
-<li>运行博客<figure class="highlight isbl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs isbl"><span class="hljs-function"><span class="hljs-title">alert</span>(<span class="hljs-string">&#x27;hexo s&#x27;</span>);</span><br></code></pre></td></tr></table></figure></li>
-<li>或者<br>上传博客<figure class="highlight isbl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs isbl"><span class="hljs-function"><span class="hljs-title">alert</span>(<span class="hljs-string">&#x27;hexo d&#x27;</span>);</span><br></code></pre></td></tr></table></figure></li>
+<li>生成博客，查看是否有报错<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo g</span><br></code></pre></td></tr></table></figure></li>
+<li>运行博客<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo s</span><br></code></pre></td></tr></table></figure></li>
+<li>或者<br>上传博客<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo d</span><br></code></pre></td></tr></table></figure></li>
 </ul>
 <h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>感谢您能看到最后，希望我这篇文章能够帮助你！<br>如果你喜欢，并且想一直支持我，赞助我可以为我提供动力<br><a href="/about">赞助页面</a></p>
 
@@ -426,7 +426,7 @@
 </div>
   
   
-    <script async src="/js/copy-codeblock.js?v=1720092350440"></script>
+    <script async src="/js/copy-codeblock.js?v=1720092679127"></script>
   
 
   
