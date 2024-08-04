@@ -5,7 +5,7 @@
 <meta name="keywords" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 
-<link rel="shortcut icon" href="https://raw.githubusercontent.com/rolude/image/main/6d683473-11e0-4ca6-9d93-abc6170e7987.jpg" type="image/x-icon" />
+<link rel="shortcut icon" href="https://raw.githubusercontent.com/rolude/image/main/favicon.jpg" type="image/x-icon" />
 <meta name="description" content="为什么我们需要备份博客？ 在你更换新电脑时，或在你博客出现报错而不知所措时，如果你拥有了会“备份”的超  能力，你只需要动动你的手指输入几个命令，你便会回到那一刻。你便不会感到原来的博客已经报废了的伤心与无奈。不过别担心，这里有我，我出现了！  想必你点开这个博客，可能已经出现了这个处境，没关系的。那么不废话，请往下看：  第一步这里我用Github作示范首先我们得需要配置一个SSH-Key  在">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo blog的备份与恢复">
@@ -19,9 +19,10 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/rolude/image/main/2.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/rolude/image/main/3.png">
 <meta property="article:published_time" content="2024-07-04T10:11:53.000Z">
-<meta property="article:modified_time" content="2024-07-04T11:36:14.115Z">
+<meta property="article:modified_time" content="2024-08-04T04:12:19.753Z">
 <meta property="article:author" content="Rolude">
-<meta property="article:tag" content="-博客 -功能">
+<meta property="article:tag" content="博客">
+<meta property="article:tag" content="功能">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/rolude/image/main/a.png">
 
@@ -29,17 +30,17 @@
 <link rel="stylesheet" href="/lib/mdui_043tiny/mdui.css">
 
 
-<link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1720773844498">
+<link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1722748286012">
 
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
 
-<link rel="stylesheet" href="/css/style.css?v=1720773844498">
+<link rel="stylesheet" href="/css/style.css?v=1722748286012">
 
 
 
 
     
-        <link rel="stylesheet" href="/custom.css?v=1720773844498">
+        <link rel="stylesheet" href="/custom.css?v=1722748286012">
     
 
 
@@ -49,7 +50,7 @@
 <script src="/lib/lax.min.js" async></script>
 
 
-<script async src="/js/app.js?v=1720773844498"></script>
+<script async src="/js/app.js?v=1722748286012"></script>
 
  
 
@@ -65,16 +66,16 @@
 
 
 <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
-<meta name="generator" content="Hexo 7.3.0"></head><body class="nexmoe mdui-drawer-body-left"><div id="nexmoe-background"><div class="nexmoe-bg" style="background-image: url(https://raw.githubusercontent.com/rolude/image/main/微信图片_20240703132821.jpg)"></div><div class="mdui-appbar mdui-shadow-0"><div class="mdui-toolbar"><a class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: &#039;#drawer&#039;, swipe: true}" title="menu"><i class="mdui-icon nexmoefont icon-menu"></i></a><div class="mdui-toolbar-spacer"></div><a class="mdui-btn mdui-btn-icon" href="/" title="Rolude"><img src="https://raw.githubusercontent.com/rolude/image/main/22976192_p0.jpg" alt="Rolude"></a></div></div></div><div id="nexmoe-header"><div class="nexmoe-drawer mdui-drawer" id="drawer">
+<meta name="generator" content="Hexo 7.3.0"></head><body class="nexmoe mdui-drawer-body-left"><div id="nexmoe-background"><div class="nexmoe-bg" style="background-image: url(https://raw.githubusercontent.com/rolude/image/main/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240703132821.jpg)"></div><div class="mdui-appbar mdui-shadow-0"><div class="mdui-toolbar"><a class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: &#039;#drawer&#039;, swipe: true}" title="menu"><i class="mdui-icon nexmoefont icon-menu"></i></a><div class="mdui-toolbar-spacer"></div><a class="mdui-btn mdui-btn-icon" href="/" title="Rolude"><img src="https://raw.githubusercontent.com/rolude/image/main/avatar.jpg" alt="Rolude"></a></div></div></div><div id="nexmoe-header"><div class="nexmoe-drawer mdui-drawer" id="drawer">
     <div class="nexmoe-avatar mdui-ripple">
         <a href="/" title="Rolude">
-            <img src="https://raw.githubusercontent.com/rolude/image/main/22976192_p0.jpg" alt="Rolude" alt="Rolude">
+            <img src="https://raw.githubusercontent.com/rolude/image/main/avatar.jpg" alt="Rolude" alt="Rolude">
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span>文章</span>5</div>
-        <div><span>标签</span>4</div>
-        <div><span>分类</span>3</div>
+        <div><span>文章</span>2</div>
+        <div><span>标签</span>3</div>
+        <div><span>分类</span>1</div>
     </div>
     <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
         
@@ -220,20 +221,6 @@
         
 
         <li class="category-list-item">
-          <a class="category-list-link" href="/categories/学习/">学习</a>
-          <span class="category-list-count">2</span>
-        </li>
-
-        
-
-        <li class="category-list-item">
-          <a class="category-list-link" href="/categories/生活/">生活</a>
-          <span class="category-list-count">1</span>
-        </li>
-
-        
-
-        <li class="category-list-item">
           <a class="category-list-link" href="/categories/网络/">网络</a>
           <span class="category-list-count">1</span>
         </li>
@@ -250,7 +237,7 @@
         
   <div class="nexmoe-widget-wrap">
     <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
-      <a href="/tags/%E5%8D%9A%E5%AE%A2-%E5%8A%9F%E8%83%BD/" style="font-size: 10px;">-博客 -功能</a> <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="font-size: 20px;">学习</a> <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 10px;">生活</a> <a href="/tags/%E7%BB%98%E7%94%BB/" style="font-size: 10px;">绘画</a>
+      <a href="/tags/%E5%8A%9F%E8%83%BD/" style="font-size: 10px;">功能</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 10px;">博客</a> <a href="/tags/%E7%BD%AE%E9%A1%B6/" style="font-size: 10px;">置顶</a>
     </div>
     
   </div>
@@ -277,23 +264,11 @@
       <ul>
         
           <li>
-            <a href="/%E7%BD%91%E7%BB%9C/hexo-blog%E7%9A%84%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D/">hexo blog的备份与恢复</a>
-          </li>
-        
-          <li>
             <a href="/%E5%85%88%E7%9C%8B/">前言</a>
           </li>
         
           <li>
-            <a href="/%E5%AD%A6%E4%B9%A0/%E7%BB%98%E7%94%BB%E6%97%A5%E8%AE%B0/">绘画日记</a>
-          </li>
-        
-          <li>
-            <a href="/%E7%94%9F%E6%B4%BB/%E6%9D%82%E8%B0%88/">杂谈</a>
-          </li>
-        
-          <li>
-            <a href="/%E5%AD%A6%E4%B9%A0/%E5%AD%A6%E4%B9%A0%E5%91%A8%E8%AE%A1/">学习</a>
+            <a href="/%E7%BD%91%E7%BB%9C/hexo-blog%E7%9A%84%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D/">hexo blog的备份与恢复</a>
           </li>
         
       </ul>
@@ -333,7 +308,7 @@
   <article>
     
         <div class="nexmoe-post-cover"> 
-            <img src="https://raw.githubusercontent.com/rolude/image/main/微信图片_20240703132821.jpg" alt="hexo blog的备份与恢复" loading="lazy">
+            <img src="https://raw.githubusercontent.com/rolude/image/main/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240703132821.jpg" alt="hexo blog的备份与恢复" loading="lazy">
             <h1>hexo blog的备份与恢复</h1>
         </div>
     
@@ -353,7 +328,7 @@
     
 </div>
 
-    <h2 id="为什么我们需要备份博客？"><a href="#为什么我们需要备份博客？" class="headerlink" title="为什么我们需要备份博客？"></a>为什么我们需要备份博客？</h2><ul>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="为什么我们需要备份博客？"><a href="#为什么我们需要备份博客？" class="headerlink" title="为什么我们需要备份博客？"></a>为什么我们需要备份博客？</h2><ul>
 <li>在你更换新电脑时，或在你博客出现报错而不知所措时，如果你拥有了会“备份”的超</li>
 </ul>
 <p>能力，你只需要动动你的手指输入几个命令，你便会回到那一刻。你便不会感到原来的博<br>客已经报废了的伤心与无奈。不过别担心，这里有我，我出现了！</p>
@@ -363,12 +338,12 @@
 <h2 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h2><p>这里我用Github作示范<br>首先我们得需要配置一个SSH-Key</p>
 <ul>
 <li>在本地博客中打开git<br>输入：<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs xml">ssh-keygen -t ed25519 -C <span class="hljs-tag">&lt;<span class="hljs-name">你的邮箱</span>&gt;</span><br></code></pre></td></tr></table></figure></li>
-<li>输入后：我们要按三次回车，第二次时会问你是否要覆盖，输入“y”即可<br><img onerror="imgOnError(this);" data-fancybox="gallery" src="https://raw.githubusercontent.com/rolude/image/main/a.png" alt="image" data-caption="image" loading="lazy"></li>
+<li>输入后：我们要按三次回车，第二次时会问你是否要覆盖，输入“y”即可<br><img src="https://raw.githubusercontent.com/rolude/image/main/a.png"></li>
 <li>然后我们接着输入：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cat</span> ~/.ssh/id_rsa.pub<br></code></pre></td></tr></table></figure></li>
-<li>获取key（显示出的信息即为密钥，如图打码所示）<br><img onerror="imgOnError(this);" data-fancybox="gallery" src="https://raw.githubusercontent.com/rolude/image/main/b.png" alt="image" data-caption="image" loading="lazy"></li>
+<li>获取key（显示出的信息即为密钥，如图打码所示）<br><img src="https://raw.githubusercontent.com/rolude/image/main/b.png"></li>
 </ul>
 <h2 id="第二步：配置key"><a href="#第二步：配置key" class="headerlink" title="第二步：配置key"></a>第二步：配置key</h2><ul>
-<li>打开github（按图一步一步来）<br><img onerror="imgOnError(this);" data-fancybox="gallery" src="https://raw.githubusercontent.com/rolude/image/main/1.png" alt="image" data-caption="image" loading="lazy"><br><img onerror="imgOnError(this);" data-fancybox="gallery" src="https://raw.githubusercontent.com/rolude/image/main/2.png" alt="image" data-caption="image" loading="lazy"><br><img onerror="imgOnError(this);" data-fancybox="gallery" src="https://raw.githubusercontent.com/rolude/image/main/3.png" alt="image" data-caption="image" loading="lazy"></li>
+<li>打开github（按图一步一步来）<br><img src="https://raw.githubusercontent.com/rolude/image/main/1.png"><br><img src="https://raw.githubusercontent.com/rolude/image/main/2.png"><br><img src="https://raw.githubusercontent.com/rolude/image/main/3.png"></li>
 <li>最后点击“Add SSh key”即可</li>
 </ul>
 <h2 id="第三步-创建分支和备份文件"><a href="#第三步-创建分支和备份文件" class="headerlink" title="第三步-创建分支和备份文件"></a>第三步-创建分支和备份文件</h2><ul>
@@ -426,12 +401,12 @@
   <div class="nexmoe-post-meta nexmoe-rainbow">
    
     
-        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E5%8D%9A%E5%AE%A2-%E5%8A%9F%E8%83%BD/" rel="tag">-博客 -功能</a>
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E5%8A%9F%E8%83%BD/" rel="tag">功能</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a>
     
 </div>
   
   
-    <script async src="/js/copy-codeblock.js?v=1720773844461"></script>
+    <script async src="/js/copy-codeblock.js?v=1722748285971"></script>
   
 
   
